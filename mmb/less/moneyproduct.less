@@ -1,0 +1,146 @@
+@import 'variable';
+.header {
+  height: 1.173333rem /* 88/75 */;
+  .back {
+    width: 1.173333rem /* 88/75 */;
+    height: 1.173333rem /* 88/75 */;
+    position: relative;
+  }
+  .back::after {
+    content: '';
+    display: block;
+    width: .533333rem /* 40/75 */;
+    height: .533333rem /* 40/75 */;
+    border-left: .026667rem /* 2/75 */ solid #fff;
+    border-bottom: .026667rem /* 2/75 */ solid #fff;
+    position: absolute;
+    top: .333333rem /* 25/75 */;
+    left: .4rem /* 30/75 */;
+    transform: rotate(45deg);
+  }
+  .appDownload {
+    width: 1.173333rem /* 88/75 */;
+    height: 1.173333rem /* 88/75 */;
+    padding: .133333rem /* 10/75 */;
+  }
+  .title {
+    height: 1.173333rem /* 88/75 */;
+    overflow: hidden;
+    h1 {
+      text-align: center;
+      line-height: 1.173333rem /* 88/75 */;
+      font-size: .48rem /* 36/75 */;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+}
+// 商品详情
+.detail {
+  padding: .333333rem /* 25/75 */ .2rem /* 15/75 */;
+  background-color: #fff;
+  .title {
+    h1 {
+      font-size: .48rem /* 36/75 */;
+      color: #000;
+      font-weight: bold;
+    }
+  }
+  .info {
+    padding: .4rem /* 30/75 */ 0;
+    span {
+      float: left;
+      margin-right: .133333rem /* 10/75 */;
+    }
+  }
+  .content {
+    font-size: .4rem /* 30/75 */;
+    .pic_sm {
+      float: right;
+      width: 3.146667rem /* 236/75 */;
+    }
+    .pic_lg {
+      margin: .266667rem /* 20/75 */ 0;
+    }
+  }
+  .buy {
+    width: 8.933333rem /* 670/75 */;
+    height: .8rem /* 60/75 */;
+    background-color: #ff9000;
+    margin: .4rem /* 30/75 */ auto;
+    border-radius: .133333rem /* 10/75 */;
+    color: #fff;
+    text-align: center;
+    line-height: .8rem /* 60/75 */;
+    font-size: .48rem /* 36/75 */;
+  }
+  .productCity {
+    #disstorck {
+      width: 3.733333rem /* 280/75 */;
+      margin: 0 auto;
+      box-shadow: .013333rem /* 1/75 */ .013333rem /* 1/75 */ .066667rem /* 5/75 */ 1px rgba(0, 0, 0, .3);
+      li {
+        height: .533333rem /* 40/75 */;
+        margin: 0 20px;
+        border-bottom: 1px dashed #ccc;
+        line-height: .533333rem /* 40/75 */;
+        strong {
+          color: #f5983c;
+          float: right;
+        }
+      }
+    }
+  }
+  .comment {
+    .tit {
+      padding: .266667rem /* 20/75 */;
+      font-size: .48rem /* 36/75 */;
+    }
+    .reply {
+      position: relative;
+      height: 3.013333rem /* 226/75 */;
+      border: .026667rem /* 2/75 */ solid #ccc;
+      textarea {
+        width: 100%;
+        height: 100%;
+      }
+      .tjdp {
+        position: absolute;
+        width: 2.666667rem /* 200/75 */;
+        height: 1.04rem /* 78/75 */;
+        background-color: #ff841d;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        line-height: 1.04rem /* 78/75 */;
+        color: #fff;
+      }
+    }
+    .list {
+      .ui-border-b {
+        overflow: hidden;
+        padding: .266667rem /* 20/75 */ 0;
+      }
+      .userimg {
+        width: 1.066667rem /* 80/75 */;
+        height: 1.066667rem /* 80/75 */;
+        border-radius: 20%;
+        overflow: hidden;
+        float: left;
+      }
+      .con {
+        width: 8.133333rem /* 610/75 */;
+        float: right;
+        .username {
+          float: left;
+        }
+        .time {
+          float: right;
+        }
+        img {
+          width: auto;
+        }
+      }
+    }
+  }
+}

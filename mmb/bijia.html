@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/bijia.css">
+  <script src="lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <header class="header">
+      <div class="app fr">
+        <a href="#"><img src="images/header_app.png" alt=""></a>
+      </div>
+      <div class="logo">
+        <h1><a href="#"><img src="images/header_logo.png" alt=""></a></h1>
+      </div>
+    </header>
+    <!-- 搜索部分 -->
+    <div class="search">
+      <div class="search_btn fr">
+        <button>搜索</button>
+      </div>
+      <div class="search_input">
+        <input type="text" placeholder="请输入你想比价的商品">
+      </div>
+    </div>
+    <div class="main">
+      <!-- 面包屑导航 -->
+      <div class="bread_nav">
+        <a href="index.html">首页</a>>
+        <a href="category.html">全部分类</a>>
+        <a href="">电视</a>
+        <button class="fr">筛选</button>
+      </div>
+      <div class="pro_detail">
+
+      </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+      <ul class="clearfix">
+        <li><a href="">登录</a></li>
+        <li><a href="">注册</a></li>
+        <li class="goTop"><a href="">返回顶部</a></li>
+      </ul>
+      <p><a href="#" style="color: red;">手机APP下载</a> <a href="index.html">慢慢买手机版</a>-- 掌上比价平台</p>
+      <p>m.manmanbuy.com</p>
+    </div>
+    <!-- 商品详情模板 -->
+    <script type="text/html" id="detailTmp">
+      <div class="pro_title">
+          <h1>{{result[0].productName}}</h1>
+        </div>
+        <div class="pro_pic">
+          <%==result[0].productImg%>
+          <div class="sc">
+            <img src="images/sc.jpg" alt="">
+          </div>
+        </div>
+        <div class="params">
+          <a href="#">比价购买</a>
+          <a href="#">商品参数</a>
+          <a href="#">评价(2322)</a>
+        </div>
+        <div class="price">
+          <div class="price_top">
+            <a href="#" class="fl"><img src="images/jd.png" alt="">京东商城</a>
+            <p class="fr"><span style="color: red">&yen;1999.00</span><span class="goBuy">去购买</span></p>
+          </div>
+          <div class="price_bot">
+            <p>实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</p>
+          </div>
+        </div>
+        <div class="comment">
+          <div class="comment_tit">
+            <p>网友评价</p>
+          </div>
+          <div class="comment_con">
+            <ul>
+              
+            </ul>
+            <div class="more">查看更多评价</div>
+          </div>
+        </div>
+    </script>
+    <!-- 评论列表模板 -->
+    <script type="text/html" id="commentTmp">
+      {{each result v i}}
+        <li>
+          <p class="info"><span class="user fl">{{v.comName}}</span><span class="time fr">{{v.comTime}}</span></p>
+          <p class="from">{{v.comFrom}}</p>
+          <p class="text">{{v.comContent}}</p>
+        </li>
+      {{/each}}
+    </script>
+    <script src="lib/jquery/jquery-1.12.4.js"></script>
+    <script src="lib/artTemplate/art-template.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/bijia.js"></script>
+</body>
+
+</html>

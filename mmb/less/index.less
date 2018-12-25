@@ -1,0 +1,94 @@
+@import 'common';
+// 导航部分
+.nav {
+  background-color: #fff;
+  margin-bottom: .133333rem /* 10/75 */;
+  overflow: hidden;
+  padding: .266667rem /* 20/75 */ 0;
+  li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-top: .4rem /* 30/75 */;
+    img {
+      width: 1.333333rem /* 100/75 */;
+      margin: 0 auto .133333rem /* 10/75 */;
+    }
+  }
+  li.hide {
+    display: none;
+  }
+}
+// 商品部分
+.product {
+  margin-bottom: .266667rem /* 20/75 */;
+  background-color: #fff;
+  .title {
+    height: .933333rem /* 70/75 */;
+    background-color: @mainColor;
+    padding: .2rem /* 15/75 */ .266667rem /* 20/75 */ 0;
+    h1 {
+      font-size: .426667rem /* 32/75 */;
+      color: #fff;
+    }
+    a {
+      display: block;
+      width: .533333rem /* 40/75 */;
+    }
+  }
+  .content {
+    li {
+      padding: .333333rem /* 25/75 */ .2rem /* 15/75 */;
+      border-bottom: .026667rem /* 2/75 */ solid #e1e1e1;
+      .pro_pic {
+        width: 2.666667rem /* 200/75 */;
+        height: 2.666667rem /* 200/75 */;
+      }
+      .pro_con {
+        width: 6.666667rem /* 500/75 */;
+        height: 2.266667rem /* 170/75 */;
+        position: relative;
+        .pro_top {
+          h3 {
+            font-size: .426667rem /* 32/75 */;
+          }
+          .price {
+            font-size: .426667rem /* 32/75 */;
+            color: @mainColor;
+          }
+        }
+        .pro_bot {
+          position: absolute;
+          width: 100%;
+          height: .4rem /* 30/75 */;
+          bottom: 0;
+          color: @timeColor;
+        }
+      }
+    }
+    .favorable {
+      width: 9.493333rem /* 712/75 */;
+      height: .853333rem /* 64/75 */;
+      margin: .24rem /* 18/75 */ auto 0;
+      border: .026667rem /* 2/75 */ solid #e1e1e1;
+      border-radius: .133333rem /* 10/75 */;
+      color: #000;
+      text-align: center;
+      line-height: .8rem /* 60/75 */;
+    }
+  }
+}
+// 品牌排行部分
+.brand {
+  height: .906667rem /* 68/75 */;
+  background-color: @mainColor;
+  padding: .2rem /* 15/75 */ .266667rem /* 20/75 */ 0;
+  margin-bottom: .666667rem /* 50/75 */;
+  h1 {
+    color: #fff;
+    font-size: .426667rem /* 32/75 */;
+  }
+  img {
+    width: .506667rem /* 38/75 */;
+  }
+}

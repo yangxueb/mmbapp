@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/gsproduct.css">
+  <script src="lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <header class="header">
+      <a href="javascript: history.back()" class="fl back"></a>
+      <div class="fr appDownload">
+        <img src="images/header_app.png" alt="">
+      </div>
+      <div class="title">
+        <h1>凑拼单</h1>
+      </div>
+    </header>
+    <!-- 栏目 -->
+    <div class="column">
+      <ul class="clearfix category fl">
+        <li class="first">
+          <a href="javascript:;" class="jd">京东</a>
+          <ul class="hide">
+
+          </ul>
+        </li>
+        <li class="first">
+          <a href="javascript:;" class="hb">华北</a>
+          <ul class="hide">
+
+          </ul>
+        </li>
+        <li class="first">
+          <a href="javascript:;" class="all_price">全部价格</a>
+          <ul class="hide">
+            <li class="current">全部价格</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="icon fr"></div>
+    </div>
+    <!-- 商品 -->
+    <div class="product">
+      <ul>
+        
+      </ul>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+      <ul class="clearfix">
+        <li><a href="">登录</a></li>
+        <li><a href="">注册</a></li>
+        <li class="goTop"><a href="">返回顶部</a></li>
+      </ul>
+      <p><a href="#" style="color: red;">手机APP下载</a> <a href="index.html">慢慢买手机版</a>-- 掌上比价平台</p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+  <!-- 京东下拉列表模板 -->
+  <script type="text/html" id="firstTmp">
+    {{each result v i}}
+    <li data-shopid="{{v.shopId}}">{{v.shopName}}</li>
+    {{/each}}
+  </script>
+  <!-- 华北下拉列表模板 -->
+  <script type="text/html" id="hbTmp">
+    {{each result v i}}
+    <li data-areaid="{{v.areaId}}">{{v.areaName}}</li>
+    {{/each}}
+  </script>
+  <!-- 商品列表模板 -->
+  <script type="text/html" id="productTmp">
+   {{each result v i}}
+   <li><a href="#">
+      <img src="{{v.productImg}}" alt="">
+      <p class="title one-txt-cut">{{v.productName}}</p>
+      <div class="bot">
+        <span class="price">{{v.productPrice}}</span>
+        <span class="bill fr">去凑单</span>
+      </div>
+    </a></li>
+   {{/each}}
+  </script>
+  <script src="lib/jquery/jquery-1.12.4.js"></script>
+  <script src="lib/artTemplate/art-template.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/gsproduct.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+.product {
+  background-color: #fff;
+}
+.product .productList {
+  display: block;
+  padding: 0.373333rem /* 28/75 */ 0.266667rem /* 20/75 */;
+  border-bottom: 0.026667rem /* 2/75 */ solid #cccccc;
+}
+.product .productList .pro_pic {
+  width: 2.933333rem /* 220/75 */;
+  height: 100%;
+}
+.product .productList .pro_pic img {
+  height: 2.933333rem /* 220/75 */;
+}
+.product .productList .pro_con {
+  width: 6.266667rem /* 470/75 */;
+}
+.product .productList .pro_con h3 {
+  color: #000;
+  font-size: 0.426667rem /* 32/75 */;
+}
+.product .productList .pro_con .price {
+  color: #ea3900;
+  font-size: 0.426667rem /* 32/75 */;
+  padding: 0.133333rem /* 10/75 */ 0;
+}
+.product .productList .pro_con .comment {
+  color: #a1a1a1;
+}
+.page {
+  height: 1.84rem /* 138/75 */;
+  padding-top: 0.266667rem /* 20/75 */;
+  background-color: #fff;
+  text-align: center;
+}
+.page span {
+  float: left;
+  width: 33.33%;
+  height: 0.933333rem /* 70/75 */;
+}
+.page span a {
+  display: block;
+  width: 2.2rem /* 165/75 */;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.88rem /* 66/75 */;
+  background-image: linear-gradient(to bottom, #f0f0f0, #d7d7d7);
+  border-radius: 0.133333rem /* 10/75 */;
+  font-size: 0.373333rem /* 28/75 */;
+}
+.page span select {
+  width: 2.066667rem /* 155/75 */;
+  height: 0.933333rem /* 70/75 */;
+  border: 0.026667rem /* 2/75 */ solid #ffa500;
+  text-align: center;
+  line-height: 0.88rem /* 66/75 */;
+  padding-left: 0.4rem /* 30/75 */;
+  font-size: 0.373333rem /* 28/75 */;
+  color: #000;
+}

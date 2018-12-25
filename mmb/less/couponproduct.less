@@ -1,0 +1,80 @@
+@import 'variable';
+.container {
+  padding-top: 1.173333rem /* 88/75 */;
+}
+.header {
+  height: 1.173333rem /* 88/75 */;
+  background-color: #f4483e;
+  .back {
+    width: 1.173333rem /* 88/75 */;
+    height: 1.173333rem /* 88/75 */;
+    position: relative;
+  }
+  .back::after {
+    content: '';
+    display: block;
+    width: .533333rem /* 40/75 */;
+    height: .533333rem /* 40/75 */;
+    border-left: .026667rem /* 2/75 */ solid #fff;
+    border-bottom: .026667rem /* 2/75 */ solid #fff;
+    position: absolute;
+    top: .333333rem /* 25/75 */;
+    left: .4rem /* 30/75 */;
+    transform: rotate(45deg);
+  }
+  .appDownload {
+    width: 1.173333rem /* 88/75 */;
+    height: 1.173333rem /* 88/75 */;
+    padding: .133333rem /* 10/75 */;
+  }
+  .title {
+    height: 1.173333rem /* 88/75 */;
+    overflow: hidden;
+    h1 {
+      text-align: center;
+      line-height: 1.173333rem /* 88/75 */;
+      font-size: .48rem /* 36/75 */;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+}
+// 优惠券
+.ticket {
+  background-color: #fff;
+  .tips {
+    height: .866667rem /* 65/75 */;
+    color: #999;
+    text-align: center;
+    line-height: .866667rem /* 65/75 */;
+    font-size: .373333rem /* 28/75 */;
+  }
+  .con {
+    padding: .266667rem /* 20/75 */ 0;
+    li {
+      padding: .266667rem /* 20/75 */;
+      border-bottom: .013333rem /* 1/75 */ solid #ccc;
+      a {
+        display: block;
+        width: 100%;
+      }
+      .pic {
+        width: 2.666667rem /* 200/75 */;
+      }
+      .info {
+        width: 6.4rem /* 480/75 */;
+        .title {
+          font-size: .373333rem /* 28/75 */;
+        }
+        .price {
+          font-size: .426667rem /* 32/75 */;
+          margin: .066667rem /* 5/75 */ 0;
+          font-weight: bold;
+        }
+        .date {
+          color: @mainColor;
+        }
+      }
+    }
+  }
+}

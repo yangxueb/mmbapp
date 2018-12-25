@@ -1,0 +1,128 @@
+.pro_detail {
+  text-align: center;
+  background-color: #fff;
+}
+.pro_detail .pro_title {
+  width: 8.933333rem /* 670/75 */;
+  padding: 0.4rem /* 30/75 */ 0.533333rem /* 40/75 */;
+  font-size: 0.48rem /* 36/75 */;
+}
+.pro_detail .pro_pic {
+  padding: 0 0.533333rem /* 40/75 */;
+  position: relative;
+}
+.pro_detail .pro_pic img {
+  width: 4.533333rem /* 340/75 */;
+  margin: 0 auto;
+}
+.pro_detail .pro_pic .sc {
+  position: absolute;
+  right: 0.6rem /* 45/75 */;
+  bottom: 0.533333rem /* 40/75 */;
+  width: 1.066667rem /* 80/75 */;
+  height: 1.066667rem /* 80/75 */;
+}
+.pro_detail .pro_pic .sc img {
+  width: 100%;
+}
+.pro_detail .params {
+  height: 0.906667rem /* 68/75 */;
+  border: 0.026667rem /* 2/75 */ solid #c64800;
+  background-color: #ffa128;
+}
+.pro_detail .params a {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+  line-height: 0.853333rem /* 64/75 */;
+  border-right: 0.026667rem /* 2/75 */ solid #c64800;
+  color: #fff;
+  font-size: 0.373333rem /* 28/75 */;
+}
+.pro_detail .params a:last-child {
+  border-right: none;
+}
+.pro_detail .price {
+  height: 2.8rem /* 210/75 */;
+  border-bottom: 0.053333rem /* 4/75 */ solid #616161;
+}
+.pro_detail .price .price_top {
+  height: 1.2rem /* 90/75 */;
+  border-bottom: 2px solid #b2b2b2;
+  padding: 0 0.133333rem /* 10/75 */;
+  line-height: 1.173333rem /* 88/75 */;
+}
+.pro_detail .price .price_top a {
+  font-size: 0.373333rem /* 28/75 */;
+  color: #000;
+  padding-left: 0.666667rem /* 50/75 */;
+  position: relative;
+}
+.pro_detail .price .price_top a img {
+  width: 0.4rem /* 30/75 */;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.pro_detail .price .price_top p {
+  font-size: 0.373333rem /* 28/75 */;
+  padding-right: 2rem /* 150/75 */;
+  position: relative;
+}
+.pro_detail .price .price_top p .goBuy {
+  position: absolute;
+  width: 1.493333rem /* 112/75 */;
+  height: 0.613333rem /* 46/75 */;
+  background-color: #ff5500;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  color: #fff;
+  line-height: 0.613333rem /* 46/75 */;
+  text-align: center;
+  font-size: 0.346667rem /* 26/75 */;
+  border-radius: 0.133333rem /* 10/75 */;
+}
+.pro_detail .price .price_bot {
+  padding: 0.2rem /* 15/75 */;
+  text-align-last: left;
+}
+.pro_detail .comment .comment_tit {
+  height: 0.88rem /* 66/75 */;
+  background-color: #dbdbdb;
+  text-align: center;
+  line-height: 0.88rem /* 66/75 */;
+  font-size: 0.426667rem /* 32/75 */;
+  color: #000;
+}
+.pro_detail .comment .comment_con {
+  padding: 0.266667rem /* 20/75 */ 0;
+}
+.pro_detail .comment .comment_con li {
+  border-bottom: 0.026667rem /* 2/75 */ solid #c5c5c5;
+  padding: 0 0.266667rem /* 20/75 */;
+}
+.pro_detail .comment .comment_con li .info {
+  height: 0.533333rem /* 40/75 */;
+}
+.pro_detail .comment .comment_con li .from {
+  text-align: right;
+  height: 0.6rem /* 45/75 */;
+}
+.pro_detail .comment .comment_con li .text {
+  line-height: 0.6rem /* 45/75 */;
+  color: #000;
+  text-align: left;
+}
+.pro_detail .comment .comment_con .more {
+  width: 9.573333rem /* 718/75 */;
+  height: 0.853333rem /* 64/75 */;
+  margin: 0.4rem /* 30/75 */ auto 0.533333rem /* 40/75 */;
+  text-align: center;
+  line-height: 0.853333rem /* 64/75 */;
+  background-color: #d9d9d9;
+  font-size: 0.426667rem /* 32/75 */;
+  color: #000;
+  border-radius: 0.133333rem /* 10/75 */;
+}

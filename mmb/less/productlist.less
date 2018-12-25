@@ -1,0 +1,65 @@
+@import 'variable';
+// 商品列表
+.product {
+  background-color: #fff;
+  .productList {
+    display: block;
+    padding: .373333rem /* 28/75 */ .266667rem /* 20/75 */;
+    border-bottom: .026667rem /* 2/75 */ solid #ccc;
+    .pro_pic {
+      width: 2.933333rem /* 220/75 */;
+      height: 100%;
+      img {
+        height: 2.933333rem /* 220/75 */;
+      }
+    }
+    .pro_con {
+      width: 6.266667rem /* 470/75 */;
+      h3 {
+        color: #000;
+        font-size: .426667rem /* 32/75 */;
+      }
+      .price {
+        color: #ea3900;
+        font-size: .426667rem /* 32/75 */;
+        padding: .133333rem /* 10/75 */ 0;
+      }
+      .comment {
+        color: @timeColor;
+      }
+    }
+  }
+}
+// 页码
+.page {
+  height: 1.84rem /* 138/75 */;
+  padding-top: .266667rem /* 20/75 */;
+  background-color: #fff;
+  text-align: center;
+  span {
+    float: left;
+    width: 33.33%;
+    height: .933333rem /* 70/75 */;
+    a {
+      display: block;
+      width: 2.2rem /* 165/75 */;
+      height: 100%;
+      margin: 0 auto;
+      text-align: center;
+      line-height: .88rem /* 66/75 */;
+      background-image: linear-gradient(to bottom, #f0f0f0, #d7d7d7);
+      border-radius: .133333rem /* 10/75 */;
+      font-size: .373333rem /* 28/75 */;
+    }
+    select {
+      width: 2.066667rem /* 155/75 */;
+      height: .933333rem /* 70/75 */;
+      border: .026667rem /* 2/75 */ solid orange;
+      text-align: center;
+      line-height: .88rem /* 66/75 */;
+      padding-left: .4rem /* 30/75 */;
+      font-size: .373333rem /* 28/75 */;
+      color: #000;
+    }
+  }
+}

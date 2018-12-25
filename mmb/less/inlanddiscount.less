@@ -1,0 +1,74 @@
+@import 'variable';
+@import 'base';
+.header {
+  height: 1.173333rem /* 88/75 */;
+  .back {
+    width: 1.173333rem /* 88/75 */;
+    height: 1.173333rem /* 88/75 */;
+    position: relative;
+  }
+  .back::after {
+    content: '';
+    display: block;
+    width: .533333rem /* 40/75 */;
+    height: .533333rem /* 40/75 */;
+    border-left: .026667rem /* 2/75 */ solid #fff;
+    border-bottom: .026667rem /* 2/75 */ solid #fff;
+    position: absolute;
+    top: .333333rem /* 25/75 */;
+    left: .4rem /* 30/75 */;
+    transform: rotate(45deg);
+  }
+  .appDownload {
+    width: 1.173333rem /* 88/75 */;
+    height: 1.173333rem /* 88/75 */;
+    padding: .133333rem /* 10/75 */;
+  }
+  .title {
+    height: 1.173333rem /* 88/75 */;
+    overflow: hidden;
+    h1 {
+      text-align: center;
+      line-height: 1.173333rem /* 88/75 */;
+      font-size: .48rem /* 36/75 */;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+}
+// 商品
+.product {
+  margin-top: -.16rem /* 12/75 */;
+  background-color: #fff;
+  li {
+    width: 50%;
+    height: 7.093333rem /* 532/75 */;
+    float: left;
+    border-right: .026667rem /* 2/75 */ solid #ccc;
+    border-bottom: .026667rem /* 2/75 */ solid #ccc;
+    padding: .2rem /* 15/75 */ .4rem /* 30/75 */;
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .title {
+      padding: .133333rem /* 10/75 */ .2rem /* 15/75 */;
+      font-size: .4rem /* 30/75 */;
+      color: #000;
+      height: 1.266667rem /* 95/75 */;
+    }
+    .price {
+      padding: .133333rem /* 10/75 */ .2rem /* 15/75 */;
+      color: @mainColor;
+      font-size: .346667rem /* 26/75 */;;
+    }
+    .info {
+      padding: 0 .2rem /* 15/75 */;
+      color: @timeColor;
+    }
+  }
+  li:nth-child(2n) {
+    border-right: none;
+  }
+}

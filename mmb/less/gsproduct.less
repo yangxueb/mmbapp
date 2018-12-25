@@ -1,0 +1,132 @@
+@import 'variable';
+.container {
+  padding-top: 1.173333rem /* 88/75 */;
+}
+.header {
+  height: 1.173333rem /* 88/75 */;
+  .back {
+    width: 1.173333rem /* 88/75 */;
+    height: 1.173333rem /* 88/75 */;
+    position: relative;
+  }
+  .back::after {
+    content: '';
+    display: block;
+    width: .533333rem /* 40/75 */;
+    height: .533333rem /* 40/75 */;
+    border-left: .026667rem /* 2/75 */ solid #fff;
+    border-bottom: .026667rem /* 2/75 */ solid #fff;
+    position: absolute;
+    top: .333333rem /* 25/75 */;
+    left: .4rem /* 30/75 */;
+    transform: rotate(45deg);
+  }
+  .appDownload {
+    width: 1.173333rem /* 88/75 */;
+    height: 1.173333rem /* 88/75 */;
+    padding: .133333rem /* 10/75 */;
+  }
+  .title {
+    height: 1.173333rem /* 88/75 */;
+    overflow: hidden;
+    h1 {
+      text-align: center;
+      line-height: 1.173333rem /* 88/75 */;
+      font-size: .48rem /* 36/75 */;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+}
+// 栏目
+.column {
+  height: 1.013333rem /* 76/75 */;
+  background-color: #fff;
+  border-bottom: .026667rem /* 2/75 */ solid #ccc;
+  .icon {
+    width: 1.226667rem /* 92/75 */;
+    height: 100%;
+    border-left: .026667rem /* 2/75 */ solid #ccc;
+    background: url('../images/ic_search.png') no-repeat center;
+    background-size: .8rem /* 60/75 */ .8rem /* 60/75 */;
+  }
+  .category {
+    // overflow: hidden;
+    width: 8.773333rem /* 658/75 */;
+    height: 100%;
+    position: relative;
+    .first {
+      float: left;
+      width: 33.33%;
+      height: 100%;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: .986667rem /* 74/75 */;
+        font-size: .426667rem /* 32/75 */;
+      }
+      ul {
+        background-color: #fff;
+        position: absolute;
+        z-index: 999;
+        top: 1.013333rem /* 76/75 */;
+        left: 0;
+        width: 10rem /* 750/75 */;
+        &.hide {
+          display: none;
+        }
+        li {
+          height: .933333rem /* 70/75 */;
+          line-height: .933333rem /* 70/75 */;
+          border-bottom: .013333rem /* 1/75 */ solid #ccc;
+          padding: 0 .266667rem /* 20/75 */;
+          font-size: .426667rem /* 32/75 */;
+          color: #000;
+          &.current {
+            color: @mainColor;
+          }
+        }
+      }
+    }
+  }
+}
+// 商品
+.product {
+  overflow: hidden;
+  li {
+    float: left;
+    margin: .2rem /* 15/75 */;
+    width: 4.6rem /* 345/75 */;
+    height: 6.066667rem /* 455/75 */;
+    background-color: #fff;
+    padding: .066667rem /* 5/75 */;
+    img {
+      width: auto;
+      height: 4.533333rem /* 340/75 */;
+      margin: 0 auto;
+    }
+    .title {
+      margin: 0 0 .066667rem /* 5/75 */ 0;
+      color: #000;
+      font-size: .373333rem /* 28/75 */;
+    }
+    .bot {
+      .price {
+        color: @priceColor;
+        font-size: .56rem /* 42/75 */;
+      }
+      .bill {
+        width: 1.68rem /* 126/75 */;
+        height: .746667rem /* 56/75 */;
+        background-color: @mainColor;
+        text-align: center;
+        line-height: .746667rem /* 56/75 */;
+        color: #fff;
+        border-radius: .133333rem /* 10/75 */;
+        font-size: .4rem /* 30/75 */;
+      }
+    }
+  }
+}

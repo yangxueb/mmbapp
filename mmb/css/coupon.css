@@ -1,0 +1,61 @@
+.container {
+  padding-top: 1.173333rem /* 88/75 */;
+}
+.header {
+  height: 1.173333rem /* 88/75 */;
+  background-color: #f4483e;
+}
+.header .back {
+  width: 1.173333rem /* 88/75 */;
+  height: 1.173333rem /* 88/75 */;
+  position: relative;
+}
+.header .back::after {
+  content: '';
+  display: block;
+  width: 0.533333rem /* 40/75 */;
+  height: 0.533333rem /* 40/75 */;
+  border-left: 0.026667rem /* 2/75 */ solid #ffffff;
+  border-bottom: 0.026667rem /* 2/75 */ solid #ffffff;
+  position: absolute;
+  top: 0.333333rem /* 25/75 */;
+  left: 0.4rem /* 30/75 */;
+  transform: rotate(45deg);
+}
+.header .appDownload {
+  width: 1.173333rem /* 88/75 */;
+  height: 1.173333rem /* 88/75 */;
+  padding: 0.133333rem /* 10/75 */;
+}
+.header .title {
+  height: 1.173333rem /* 88/75 */;
+  overflow: hidden;
+}
+.header .title h1 {
+  text-align: center;
+  line-height: 1.173333rem /* 88/75 */;
+  font-size: 0.48rem /* 36/75 */;
+  font-weight: bold;
+  color: #fff;
+}
+.coupon {
+  background-color: #fff;
+  padding: 0.4rem /* 30/75 */ 0.2rem /* 15/75 */;
+}
+.coupon li {
+  float: left;
+  width: 3.093333rem /* 232/75 */;
+  height: 2rem /* 150/75 */;
+  border: 0.026667rem /* 2/75 */ solid #cccccc;
+  margin: 0 0.133333rem /* 10/75 */ 0.133333rem /* 10/75 */ 0;
+}
+.coupon li a {
+  display: block;
+  width: 1.333333rem /* 100/75 */;
+  margin: 0.066667rem /* 5/75 */ auto;
+  text-align: center;
+  color: #969696;
+}
+.coupon li:nth-child(3n) {
+  margin-right: 0;
+}

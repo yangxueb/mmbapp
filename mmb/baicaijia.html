@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/baicaijia.css">
+  <script src="lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <header class="header">
+      <a href="javascript: history.back()" class="fl back"></a>
+      <div class="fr appDownload">
+        <img src="images/header_app.png" alt="">
+      </div>
+      <div class="title">
+        <h1>白菜价-淘宝内部券</h1>
+      </div>
+    </header>
+    <!-- 导航 -->
+    <div class="nav">
+      <ul class="clearfix">
+
+      </ul>
+    </div>
+    <!-- 商品 -->
+    <div class="product">
+      <ul>
+        
+      </ul>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+      <ul class="clearfix">
+        <li><a href="">登录</a></li>
+        <li><a href="">注册</a></li>
+        <li class="goTop"><a href="">返回顶部</a></li>
+      </ul>
+      <p><a href="#" style="color: red;">手机APP下载</a> <a href="index.html">慢慢买手机版</a>-- 掌上比价平台</p>
+      <p>m.manmanbuy.com</p>
+    </div>
+    <!-- 导航列表模板 -->
+    <script type="text/html" id="navTmp">
+      {{each result v i}}
+        <li><a href="javascript:;" data-id="{{v.titleId}}" class="{{i == 0 ? 'current' : ''}}">{{v.title}}</a></li>
+      {{/each}}
+    </script>
+    <!-- 商品列表渲染 -->
+    <script type="text/html" id="productTmp">
+      {{each result v i}}
+      <li>
+        <div class="pro_pic fl">{{@v.productImg}}</div>
+        <div class="pro_con fr">
+          <h1>{{@v.productName}}</h1>
+          <div class="price clearfix">
+            {{@v.productPrice}}
+          </div>
+          <div class="progress clearfix">
+            {{@v.productCouponRemain}}
+          </div>
+          <div class="coupon clearfix">
+            <div class="ticket fl">{{@v.productCoupon}}</div>
+            <div class="link fr">{{@v.productHref}}</div>
+          </div>
+        </div>
+      </li>
+      {{/each}}
+    </script>
+    <script src="lib/jquery/jquery-1.12.4.js"></script>
+    <script src="lib/artTemplate/art-template.js"></script>
+    <script src="lib/iscroll/iscroll.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/baicaijia.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+.header {
+  height: 1.173333rem /* 88/75 */;
+}
+.header .back {
+  width: 1.173333rem /* 88/75 */;
+  height: 1.173333rem /* 88/75 */;
+  position: relative;
+}
+.header .back::after {
+  content: '';
+  display: block;
+  width: 0.533333rem /* 40/75 */;
+  height: 0.533333rem /* 40/75 */;
+  border-left: 0.026667rem /* 2/75 */ solid #ffffff;
+  border-bottom: 0.026667rem /* 2/75 */ solid #ffffff;
+  position: absolute;
+  top: 0.333333rem /* 25/75 */;
+  left: 0.4rem /* 30/75 */;
+  transform: rotate(45deg);
+}
+.header .appDownload {
+  width: 1.173333rem /* 88/75 */;
+  height: 1.173333rem /* 88/75 */;
+  padding: 0.133333rem /* 10/75 */;
+}
+.header .title {
+  height: 1.173333rem /* 88/75 */;
+  overflow: hidden;
+}
+.header .title h1 {
+  text-align: center;
+  line-height: 1.173333rem /* 88/75 */;
+  font-size: 0.48rem /* 36/75 */;
+  font-weight: bold;
+  color: #fff;
+}
+.product {
+  background-color: #fff;
+}
+.product li {
+  padding: 0.333333rem /* 25/75 */ 0.2rem /* 15/75 */;
+  border-bottom: 0.026667rem /* 2/75 */ solid #e1e1e1;
+}
+.product li .pro_pic {
+  width: 2.666667rem /* 200/75 */;
+  height: 2.666667rem /* 200/75 */;
+}
+.product li .pro_con {
+  width: 6.666667rem /* 500/75 */;
+  height: 2.266667rem /* 170/75 */;
+  position: relative;
+}
+.product li .pro_con .pro_top h3 {
+  font-size: 0.426667rem /* 32/75 */;
+}
+.product li .pro_con .pro_top .price {
+  font-size: 0.426667rem /* 32/75 */;
+  color: #ff841d;
+}
+.product li .pro_con .pro_bot {
+  position: absolute;
+  width: 100%;
+  height: 0.4rem /* 30/75 */;
+  bottom: 0;
+  color: #a1a1a1;
+}
+.page {
+  height: 1.84rem /* 138/75 */;
+  padding-top: 0.266667rem /* 20/75 */;
+  background-color: #fff;
+  text-align: center;
+}
+.page span {
+  float: left;
+  width: 33.33%;
+  height: 0.933333rem /* 70/75 */;
+}
+.page span a {
+  display: block;
+  width: 2.2rem /* 165/75 */;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.88rem /* 66/75 */;
+  background-image: linear-gradient(to bottom, #f0f0f0, #d7d7d7);
+  border-radius: 0.133333rem /* 10/75 */;
+  font-size: 0.373333rem /* 28/75 */;
+}
+.page span select {
+  width: 2.066667rem /* 155/75 */;
+  height: 0.933333rem /* 70/75 */;
+  border: 0.026667rem /* 2/75 */ solid #ffa500;
+  text-align: center;
+  line-height: 0.88rem /* 66/75 */;
+  padding-left: 0.4rem /* 30/75 */;
+  font-size: 0.373333rem /* 28/75 */;
+  color: #000;
+}

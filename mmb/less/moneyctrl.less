@@ -1,0 +1,102 @@
+@import 'variable';
+.header {
+  height: 1.173333rem /* 88/75 */;
+  .back {
+    width: 1.173333rem /* 88/75 */;
+    height: 1.173333rem /* 88/75 */;
+    position: relative;
+  }
+  .back::after {
+    content: '';
+    display: block;
+    width: .533333rem /* 40/75 */;
+    height: .533333rem /* 40/75 */;
+    border-left: .026667rem /* 2/75 */ solid #fff;
+    border-bottom: .026667rem /* 2/75 */ solid #fff;
+    position: absolute;
+    top: .333333rem /* 25/75 */;
+    left: .4rem /* 30/75 */;
+    transform: rotate(45deg);
+  }
+  .appDownload {
+    width: 1.173333rem /* 88/75 */;
+    height: 1.173333rem /* 88/75 */;
+    padding: .133333rem /* 10/75 */;
+  }
+  .title {
+    height: 1.173333rem /* 88/75 */;
+    overflow: hidden;
+    h1 {
+      text-align: center;
+      line-height: 1.173333rem /* 88/75 */;
+      font-size: .48rem /* 36/75 */;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+}
+.product {
+  background-color: #fff;
+  li {
+    padding: .333333rem /* 25/75 */ .2rem /* 15/75 */;
+    border-bottom: .026667rem /* 2/75 */ solid #e1e1e1;
+    .pro_pic {
+      width: 2.666667rem /* 200/75 */;
+      height: 2.666667rem /* 200/75 */;
+    }
+    .pro_con {
+      width: 6.666667rem /* 500/75 */;
+      height: 2.266667rem /* 170/75 */;
+      position: relative;
+      .pro_top {
+        h3 {
+          font-size: .426667rem /* 32/75 */;
+        }
+        .price {
+          font-size: .426667rem /* 32/75 */;
+          color: @mainColor;
+        }
+      }
+      .pro_bot {
+        position: absolute;
+        width: 100%;
+        height: .4rem /* 30/75 */;
+        bottom: 0;
+        color: @timeColor;
+      }
+    }
+  }
+}
+// 页码
+.page {
+  height: 1.84rem /* 138/75 */;
+  padding-top: .266667rem /* 20/75 */;
+  background-color: #fff;
+  text-align: center;
+  span {
+    float: left;
+    width: 33.33%;
+    height: .933333rem /* 70/75 */;
+    a {
+      display: block;
+      width: 2.2rem /* 165/75 */;
+      height: 100%;
+      margin: 0 auto;
+      text-align: center;
+      line-height: .88rem /* 66/75 */;
+      background-image: linear-gradient(to bottom, #f0f0f0, #d7d7d7);
+      border-radius: .133333rem /* 10/75 */;
+      font-size: .373333rem /* 28/75 */;
+    }
+    select {
+      width: 2.066667rem /* 155/75 */;
+      height: .933333rem /* 70/75 */;
+      border: .026667rem /* 2/75 */ solid orange;
+      text-align: center;
+      line-height: .88rem /* 66/75 */;
+      padding-left: .4rem /* 30/75 */;
+      font-size: .373333rem /* 28/75 */;
+      color: #000;
+    }
+  }
+}

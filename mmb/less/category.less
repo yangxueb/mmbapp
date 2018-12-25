@@ -1,0 +1,53 @@
+// 分类列表
+.category {
+  border: .013333rem /* 1/75 */ solid #ccc;
+  border-radius: .133333rem /* 10/75 */;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  .firstLi ul {
+    display: none;
+    background-color: #fff;
+  }
+  .second {
+    a {
+      float: left;
+      width: 33.33%;
+      height: 1.293333rem /* 97/75 */;
+      text-align: center;
+      line-height: 1.28rem /* 96/75 */;
+      font-size: .373333rem /* 28/75 */;
+      border-right: .013333rem /* 1/75 */ solid #ccc;
+      border-bottom: .013333rem /* 1/75 */ solid #ccc;
+    }
+  }
+  .second:nth-child(3n) a {
+    border-right: none;
+  }
+  .first {
+    display: block;
+    height: 1.306667rem /* 98/75 */;
+    line-height: 1.306667rem /* 98/75 */;
+    padding-left: .4rem /* 30/75 */;
+    font-weight: 600;
+    font-size: .426667rem /* 32/75 */;
+    border-bottom: .013333rem /* 1/75 */ solid #ccc;
+    position: relative;
+  }
+  .first::after {
+    content: '';
+    position: absolute;
+    width: .4rem /* 30/75 */;
+    height: .4rem /* 30/75 */;
+    border-left: .026667rem /* 2/75 */ solid grey;
+    border-bottom: .026667rem /* 2/75 */ solid grey;
+    top: 50%;
+    right: .333333rem /* 25/75 */;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  .first.change::after {
+    transform: translateY(-50%) rotate(-135deg);
+  }
+  li:last-of-type .first {
+    border-bottom: none;
+  }
+}

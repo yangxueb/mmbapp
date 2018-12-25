@@ -1,0 +1,154 @@
+@import 'variable';
+.container {
+  padding-top: 1.173333rem /* 88/75 */;
+}
+.header {
+  height: 1.173333rem /* 88/75 */;
+  background-color: #f4483e;
+  .back {
+    width: 1.173333rem /* 88/75 */;
+    height: 1.173333rem /* 88/75 */;
+    position: relative;
+  }
+  .back::after {
+    content: '';
+    display: block;
+    width: .533333rem /* 40/75 */;
+    height: .533333rem /* 40/75 */;
+    border-left: .026667rem /* 2/75 */ solid #fff;
+    border-bottom: .026667rem /* 2/75 */ solid #fff;
+    position: absolute;
+    top: .333333rem /* 25/75 */;
+    left: .4rem /* 30/75 */;
+    transform: rotate(45deg);
+  }
+  .appDownload {
+    width: 1.173333rem /* 88/75 */;
+    height: 1.173333rem /* 88/75 */;
+    padding: .133333rem /* 10/75 */;
+  }
+  .title {
+    height: 1.173333rem /* 88/75 */;
+    overflow: hidden;
+    h1 {
+      text-align: center;
+      line-height: 1.173333rem /* 88/75 */;
+      font-size: .48rem /* 36/75 */;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+}
+// 导航
+.nav {
+  height: 1.066667rem /* 80/75 */;
+  background-color: #fff;
+  overflow: hidden;
+  li {
+    float: left;
+    a {
+      display: block;
+      padding: 0 .333333rem /* 25/75 */;
+      font-size: .373333rem /* 28/75 */;
+      line-height: 1.026667rem /* 77/75 */;
+      border-bottom: 3px solid transparent;
+    }
+    a.current {
+      color: #d90000;
+      border-bottom: 3px solid #d90000;
+    }
+  }
+}
+// 商品
+.product {
+  background-color: lightgrey;
+  overflow: hidden;
+  padding-bottom: .266667rem /* 20/75 */;
+  li {
+    margin-top: .106667rem /* 8/75 */;
+    height: 4rem /* 300/75 */;
+    background-color: #fff;
+    padding: .24rem /* 18/75 */ .133333rem /* 10/75 */;
+    display: block;
+    .pro_pic {
+      width: 3.466667rem /* 260/75 */;
+    }
+    .pro_con {
+      width: 6.16rem /* 462/75 */;
+      h1 {
+        font-size: .4rem /* 30/75 */;
+        color: #000;
+      }
+      .price {
+        margin: .133333rem /* 10/75 */ 0;
+        color: @priceColor;
+        font-size: .64rem /* 48/75 */;
+        i {
+          font-style: normal;
+          font-size: .373333rem /* 28/75 */;
+        }
+        em {
+          font-style: normal;
+          font-size: .32rem /* 24/75 */;
+        }
+        del {
+          margin-left: .266667rem /* 20/75 */;
+          font-size: .32rem /* 24/75 */;
+          color: @timeColor;
+        }
+      }
+      .progress {
+        .bar {
+          width: 2.16rem /* 162/75 */;
+          height: .373333rem /* 28/75 */;
+          border: .026667rem /* 2/75 */ solid @priceColor;
+          border-radius: .186667rem /* 14/75 */;
+          background-color: #ffb7b7;
+          color: #fff;
+          text-align: center;
+          line-height: .32rem /* 24/75 */;
+          margin: 0 .266667rem /* 20/75 */ .133333rem /* 10/75 */ 0;
+          position: relative;
+          i {
+            font-style: normal;
+            span {
+              color: #fff;
+            }
+          }
+          b {
+            position: absolute;
+            top: 0;
+            right: -2.466667rem /* 110/75 */;
+            color: @priceColor;
+          }
+        }
+      }
+      .coupon {
+        .ticket {
+          width: 2.906667rem /* 218/75 */;
+          height: .72rem /* 54/75 */;
+          border: .026667rem /* 2/75 */ dashed @priceColor;
+          margin-right: .133333rem /* 10/75 */;
+          color: @priceColor;
+          text-align: center;
+          line-height: .666667rem /* 50/75 */;
+          a {
+            color: @priceColor;
+          }
+        }
+        .link {
+          width: 1.533333rem /* 115/75 */;
+          height: .72rem /* 54/75 */;
+          background-color: @priceColor;
+          border-radius: .133333rem /* 10/75 */;
+          text-align: center;
+          line-height: .72rem /* 54/75 */;
+          color: #fff;
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

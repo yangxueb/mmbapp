@@ -1,0 +1,78 @@
+.container {
+  padding-top: 1.173333rem /* 88/75 */;
+}
+.header {
+  height: 1.173333rem /* 88/75 */;
+  background-color: #f4483e;
+}
+.header .back {
+  width: 1.173333rem /* 88/75 */;
+  height: 1.173333rem /* 88/75 */;
+  position: relative;
+}
+.header .back::after {
+  content: '';
+  display: block;
+  width: 0.533333rem /* 40/75 */;
+  height: 0.533333rem /* 40/75 */;
+  border-left: 0.026667rem /* 2/75 */ solid #ffffff;
+  border-bottom: 0.026667rem /* 2/75 */ solid #ffffff;
+  position: absolute;
+  top: 0.333333rem /* 25/75 */;
+  left: 0.4rem /* 30/75 */;
+  transform: rotate(45deg);
+}
+.header .appDownload {
+  width: 1.173333rem /* 88/75 */;
+  height: 1.173333rem /* 88/75 */;
+  padding: 0.133333rem /* 10/75 */;
+}
+.header .title {
+  height: 1.173333rem /* 88/75 */;
+  overflow: hidden;
+}
+.header .title h1 {
+  text-align: center;
+  line-height: 1.173333rem /* 88/75 */;
+  font-size: 0.48rem /* 36/75 */;
+  font-weight: bold;
+  color: #fff;
+}
+.ticket {
+  background-color: #fff;
+}
+.ticket .tips {
+  height: 0.866667rem /* 65/75 */;
+  color: #999;
+  text-align: center;
+  line-height: 0.866667rem /* 65/75 */;
+  font-size: 0.373333rem /* 28/75 */;
+}
+.ticket .con {
+  padding: 0.266667rem /* 20/75 */ 0;
+}
+.ticket .con li {
+  padding: 0.266667rem /* 20/75 */;
+  border-bottom: 0.013333rem /* 1/75 */ solid #cccccc;
+}
+.ticket .con li a {
+  display: block;
+  width: 100%;
+}
+.ticket .con li .pic {
+  width: 2.666667rem /* 200/75 */;
+}
+.ticket .con li .info {
+  width: 6.4rem /* 480/75 */;
+}
+.ticket .con li .info .title {
+  font-size: 0.373333rem /* 28/75 */;
+}
+.ticket .con li .info .price {
+  font-size: 0.426667rem /* 32/75 */;
+  margin: 0.066667rem /* 5/75 */ 0;
+  font-weight: bold;
+}
+.ticket .con li .info .date {
+  color: #ff841d;
+}

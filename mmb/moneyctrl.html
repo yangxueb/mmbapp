@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/moneyctrl.css">
+  <script src="lib/flexible/flexible.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <header class="header">
+      <a href="javascript: history.back()" class="fl back"></a>
+      <div class="fr appDownload">
+        <img src="images/header_app.png" alt="">
+      </div>
+      <div class="title">
+          <h1>省钱控--最新优惠</h1>
+      </div>
+    </header>
+    <!-- 商品列表 -->
+    <div class="product">
+      <ul>
+                
+      </ul>
+      <!-- 页码 -->
+      <div class="page clearfix">
+        <span><a href="javascript:;" class="prevPage">上一页</a></span>
+        <span>
+          <select name="" id="selectPage">
+            <option value="1">1 /3</option>
+            <option value="2">2 /3</option>
+            <option value="3">3 /3</option>
+          </select>
+        </span>
+        <span><a href="javascript:;" class="nextPage">下一页</a></span>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+      <ul class="clearfix">
+        <li><a href="">登录</a></li>
+        <li><a href="">注册</a></li>
+        <li class="goTop"><a href="">返回顶部</a></li>
+      </ul>
+      <p><a href="#" style="color: red;">手机APP下载</a> <a href="index.html">慢慢买手机版</a>-- 掌上比价平台</p>
+      <p>m.manmanbuy.com</p>
+    </div>
+    <!-- 商品列表模板 -->
+    <script type="text/html" id="productTmp">
+      {{each result v i}}
+        <li><a href="moneyproduct.html?productid={{v.productId}}" class="clearfix">
+          <div class="pro_pic fl">
+            <%==v.productImgSm%>
+          </div>
+          <div class="pro_con fr">
+            <div class="pro_top">
+              <h3 class="pro_tit">{{v.productName}}<span class="price">{{v.productPinkage}}</span></h3>
+            </div>
+            <div class="pro_bot">
+              <p class="time fl"><span>{{v.productFrom}}</span>|<span>{{v.productTime}}</span></p>
+              <span class="icon fr">{{v.productComCount}}</span>
+            </div>
+            <p></p>
+          </div>
+        </a></li>
+      {{/each}}
+    </script>
+  <script src="lib/jquery/jquery-1.12.4.js"></script>
+  <script src="lib/artTemplate/art-template.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/moneyctrl.js"></script>
+</body>
+</html>
