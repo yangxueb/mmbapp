@@ -2,7 +2,7 @@
  * @Author: yangxb 
  * @Date: 2018-12-24 16:09:43 
  * @Last Modified by: yangxb
- * @Last Modified time: 2018-12-24 16:19:31
+ * @Last Modified time: 2018-12-26 16:20:49
  */
 $(function () {
   // 商品列表渲染
@@ -19,6 +19,11 @@ $(function () {
         console.log(info);
         pageNum = Math.ceil(info.totalCount / info.pagesize);
         $('.product ul').html(template('productTmp', info));
+        $('#selectPage').html('');
+        for (var i = 1; i <= pageNum; i++) {
+          $('#selectPage').append('<option index="'+i+'" value="' + i + '">' + i + ' /'+pageNum+'</option>');
+        }
+        $('#selectPage').find('option').eq(currentPage - 1).attr('selected', true);
       }
     })
   }

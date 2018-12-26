@@ -1,0 +1,62 @@
+.container {
+  padding-top: 1.173333rem /* 88/75 */;
+}
+.header {
+  height: 1.173333rem /* 88/75 */;
+}
+.header .back {
+  width: 1.173333rem /* 88/75 */;
+  height: 1.173333rem /* 88/75 */;
+  position: relative;
+}
+.header .back::after {
+  content: '';
+  display: block;
+  width: 0.533333rem /* 40/75 */;
+  height: 0.533333rem /* 40/75 */;
+  border-left: 0.026667rem /* 2/75 */ solid #ffffff;
+  border-bottom: 0.026667rem /* 2/75 */ solid #ffffff;
+  position: absolute;
+  top: 0.333333rem /* 25/75 */;
+  left: 0.4rem /* 30/75 */;
+  transform: rotate(45deg);
+}
+.header .appDownload {
+  width: 1.173333rem /* 88/75 */;
+  height: 1.173333rem /* 88/75 */;
+  padding: 0.133333rem /* 10/75 */;
+}
+.header .title {
+  height: 1.173333rem /* 88/75 */;
+  overflow: hidden;
+}
+.header .title h1 {
+  text-align: center;
+  line-height: 1.173333rem /* 88/75 */;
+  font-size: 0.48rem /* 36/75 */;
+  font-weight: bold;
+  color: #fff;
+}
+.nav {
+  padding: 0.266667rem /* 20/75 */;
+  background-color: #fff;
+}
+.nav li {
+  float: left;
+  margin: 0 0.066667rem /* 5/75 */ 0.133333rem /* 10/75 */;
+  border: 0.026667rem /* 2/75 */ solid #cccccc;
+}
+.nav li a {
+  display: block;
+  padding: 0.32rem /* 24/75 */ 0.266667rem /* 20/75 */;
+  width: 100%;
+  font-size: 0.48rem /* 36/75 */;
+  line-height: 0.506667rem /* 38/75 */;
+  background-color: #f4f4f4;
+}
+.nav li a img {
+  display: inline-block;
+  width: 0.466667rem /* 35/75 */;
+  transform: translateY(0.093333rem);
+  margin-right: 0.066667rem /* 5/75 */;
+}

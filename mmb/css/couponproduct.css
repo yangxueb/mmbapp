@@ -76,3 +76,48 @@
 .ticket .con li .info .date {
   color: #ff841d;
 }
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  display: none;
+}
+.modal.show {
+  display: block;
+}
+.modal .inner {
+  width: 6.666667rem /* 500/75 */;
+  margin: 2rem /* 150/75 */ auto;
+  position: relative;
+}
+.modal .prev,
+.modal .next {
+  position: absolute;
+  font-size: 1.56rem /* 42/75 */;
+  color: #fff;
+  top: 3.6rem /* 270/75 */;
+}
+.modal .prev {
+  left: 0.266667rem /* 20/75 */;
+}
+.modal .next {
+  right: 0.266667rem /* 20/75 */;
+}
+.modal .close {
+  position: absolute;
+  top: 2rem /* 150/75 */;
+  left: 7.933333rem /* 595/75 */;
+  width: 0.4rem /* 30/75 */;
+  height: 0.4rem /* 30/75 */;
+  font-size: 0.48rem /* 36/75 */;
+  border: 0.04rem /* 3/75 */ solid #555555;
+  border-radius: 50%;
+  text-align: center;
+}
+.modal .close p {
+  transform: translate3d(-0.013333rem, -0.173333rem, 0);
+}

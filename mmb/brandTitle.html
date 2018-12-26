@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>慢慢买</title>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/productlist.css">
+  <link rel="stylesheet" href="css/brandTitle.css">
   <script src="lib/flexible/flexible.js"></script>
 </head>
 <body>
@@ -33,25 +33,16 @@
     <div class="bread_nav">
       <a href="index.html">首页</a>>
       <a href="category.html">全部分类</a>>
-      <a href="">电视</a>
-      <button class="fr">筛选</button>
     </div>
-    <!-- 商品列表 -->
-    <div class="product">
-      <ul>
-        
-      </ul>
-      <!-- 页码 -->
-      <div class="page clearfix">
-        <span><a href="javascript:;" class="prevPage">上一页</a></span>
-        <span>
-          <select name="" id="selectPage">
-            <!-- <option value="1">1 /3</option>
-            <option value="2">2 /3</option>
-            <option value="3">3 /3</option> -->
-          </select>
-        </span>
-        <span><a href="javascript:;" class="nextPage">下一页</a></span>
+    <!-- 品牌 -->
+    <div class="brand">
+      <div class="brand_tit">
+        <h1>热门品牌排行</h1>
+      </div>
+      <div class="brand_con">
+        <ul>
+          
+        </ul>
       </div>
     </div>
     <!-- 底部 -->
@@ -64,24 +55,15 @@
       <p><a href="#" style="color: red;">手机APP下载</a> <a href="index.html">慢慢买手机版</a>-- 掌上比价平台</p>
       <p>m.manmanbuy.com</p>
     </div>
-  <!-- 商品列表模板 -->
-  <script type="text/html" id="productTmp">
-    {{each result v i}}
-      <li><a href="bijia.html?productid={{v.productId}}&category={{v.brandName}}&categoryid={{v.categoryId}}" class="clearfix productList">
-        <div class="pro_pic fl">
-          <%==v.productImg %>
-        </div>
-        <div class="pro_con fr">
-          <h3>{{v.productName}}</h3>
-          <p class="price">{{v.productPrice}}</p>
-          <p class="comment"><span>{{v.productQuote}}</span><span>{{v.productCom}}</span></p>
-        </div>
-      </a></li>
-    {{/each}}
-  </script>
+    <!-- 品牌列表模板 -->
+    <script type="text/html" id="brandTmp">
+      {{each result v i}}
+      <li><a href="brand.html?brandtitleid={{v.brandTitleId}}">{{v.brandTitle}}</a></li>
+      {{/each}}
+    </script>
   <script src="lib/jquery/jquery-1.12.4.js"></script>
   <script src="lib/artTemplate/art-template.js"></script>
   <script src="js/common.js"></script>
-  <script src="js/productlist.js"></script>
+  <script src="js/brandTitle.js"></script>
 </body>
 </html>

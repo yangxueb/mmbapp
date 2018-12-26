@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>慢慢买</title>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/couponproduct.css">
+  <link rel="stylesheet" href="css/sitenav.css">
   <script src="lib/flexible/flexible.js"></script>
 </head>
 
@@ -20,17 +20,14 @@
         <img src="images/header_app.png" alt="">
       </div>
       <div class="title">
-        <h1>肯德基优惠券</h1>
+        <h1>商场导航</h1>
       </div>
     </header>
-    <!-- 优惠券 -->
-    <div class="ticket">
-      <div class="tips">--点餐前出示手机中的优惠券，即可享受优惠--</div>
-      <div class="con">
-        <ul>
-
-        </ul>
-      </div>
+    <!-- 导航 -->
+    <div class="nav">
+      <ul class="clearfix">
+        
+      </ul>
     </div>
     <!-- 底部 -->
     <div class="footer">
@@ -43,34 +40,16 @@
       <p>m.manmanbuy.com</p>
     </div>
   </div>
-  <!-- 模态框 -->
-  <div class="modal">
-    <div class="inner">
-    </div>
-    <div class="prev"><</div>
-    <div class="next">></div>
-    <div class="close">
-      <p>×</p>
-    </div>
-  </div>
-  <!-- 优惠券模板 -->
-  <script type="text/html" id="ticketTmp">
+  <!-- 导航列表模板 -->
+  <script type="text/html" id="navTmp">
     {{each result v i}}
-      <li><a href="javascript:;" class="clearfix" data-id="{{i}}">
-        <div class="pic fl">{{@v.couponProductImg}}</div>
-        <div class="info fr">
-          <p class="title">{{v.couponProductName}}</p>
-          <p class="price">{{v.couponProductPrice}}</p>
-          <p class="date">{{v.couponProductTime}}</p>
-        </div>
-      </a></li>
-      {{/each}}
-    </script>
+    <li><a href="{{v.navHref}}"><img src="{{v.navImg}}" alt="">{{v.navTitle}}</a></li>
+    {{/each}}
+  </script>
   <script src="lib/jquery/jquery-1.12.4.js"></script>
   <script src="lib/artTemplate/art-template.js"></script>
-  <script src="lib/iscroll/iscroll.js"></script>
   <script src="js/common.js"></script>
-  <script src="js/couponproduct.js"></script>
+  <script src="js/sitenav.js"></script>
 </body>
 
 </html>
