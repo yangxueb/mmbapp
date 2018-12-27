@@ -2,11 +2,11 @@
  * @Author: yangxb 
  * @Date: 2018-12-24 16:09:43 
  * @Last Modified by: yangxb
- * @Last Modified time: 2018-12-26 16:20:49
+ * @Last Modified time: 2018-12-27 08:39:31
  */
 $(function () {
   // 商品列表渲染
-  var currentPage = 1;
+  var currentPage = 0;
   render();
   function render () {
     $.ajax({
@@ -16,14 +16,13 @@ $(function () {
       },
       dataType: 'json',
       success: function (info) {
-        console.log(info);
         pageNum = Math.ceil(info.totalCount / info.pagesize);
         $('.product ul').html(template('productTmp', info));
         $('#selectPage').html('');
         for (var i = 1; i <= pageNum; i++) {
           $('#selectPage').append('<option index="'+i+'" value="' + i + '">' + i + ' /'+pageNum+'</option>');
         }
-        $('#selectPage').find('option').eq(currentPage - 1).attr('selected', true);
+        $('#selectPage').find('option').eq(currentPage).attr('selected', true);
       }
     })
   }
@@ -39,15 +38,15 @@ $(function () {
   })
   $('.nextPage').on('click', function () {
     currentPage ++;
-    if (currentPage > pageNum) {
-      currentPage = pageNum;
+    if (currentPage > pageNum - 1) {
+      currentPage = pageNum - 1;
       return;
     }
     $('#selectPage').val(currentPage);
     render();
   })
   $('#selectPage').on('change', function () {
-    currentPage = $(this).val();
+    currentPage = $(this).val() - 1;
     render();
   })
 })
